@@ -3,3 +3,9 @@
 MSBSystem::MSBSystem()
 {
 }
+
+int MSBSystem::systemTest()
+{
+    MSBAlgorythm algorythm;
+    return algorythm.test();
+}

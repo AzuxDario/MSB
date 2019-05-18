@@ -7,6 +7,7 @@ class MSBAlgorythm
 
 public:
     MSBAlgorythm();
+    int test();
 };
 
 #endif // MSBALGORYTHM_H
