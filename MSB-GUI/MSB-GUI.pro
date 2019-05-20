@@ -42,3 +42,10 @@ else:unix: LIBS += -L$$OUT_PWD/../MSB-System/ -lMSB-System
 
 INCLUDEPATH += $$PWD/../MSB-System
 DEPENDPATH += $$PWD/../MSB-System
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../MSB-Algorythm/release/ -lMSB-Algorythm
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../MSB-Algorythm/debug/ -lMSB-Algorythm
+else:unix: LIBS += -L$$OUT_PWD/../MSB-Algorythm/ -lMSB-Algorythm
+
+INCLUDEPATH += $$PWD/../MSB-Algorythm
+DEPENDPATH += $$PWD/../MSB-Algorythm
